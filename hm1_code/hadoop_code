@@ -1,0 +1,29 @@
+
+step1: Preprocessing and word frequency statistics
+
+
+hadoop jar /usr/lib/hadoop/hadoop-streaming-3.3.6.jar \
+    -D mapreduce.job.name="FirstJob_WordCount" \
+    -input hw1-hm3424 \
+    -output temp_output \
+    -file mapper1.py \
+    -mapper "python mapper1.py" \
+    -file reducer1.py \
+    -reducer "python reducer1.py"
+
+
+step2: Sort the word frequency from largest to smallest, and  assign an increasing integer ID to each word  in order of decreasing count. ID’s start at 1.
+
+hadoop fs -rm -r final_output
+
+hadoop jar /usr/lib/hadoop/hadoop-streaming-3.3.6.jar \
+    -D mapreduce.job.name="SecondJob_SortAssignID" \
+    -D mapreduce.job.reduces=1 \
+    -D stream.num.map.output.key.fields=1 \
+    -D mapreduce.partition.keycomparator.options="-k1,1n" \
+    -input temp_output \
+    -output final_output \
+    -file mapper2.py \
+    -mapper "python mapper2.py" \
+    -file reducer2.py \
+    -reducer "python reducer2.py"
