@@ -5,13 +5,15 @@ import re
 def read_input(input):
     for line in input:
         # 1) 转小写
-        line = line.lower()
+        line = line.lower().strip()
         # 2) 将非字母数字字符替换为空格
-        line = re.sub('[^a-z0-9]', ' ', line)
-        # 3) split 拆分
+        line = re.sub(r'[^a-z0-9]', ' ', line)
+        # 3) 拆分单词并过滤纯数字
         words = line.split()
-        # 返回拆分出的单词列表
-        yield words
+        for word in words:
+            # 新增条件：跳过纯数字的单词（如"1234"）
+            if not word.isdigit():
+                yield word
 
 def main(separator='\t'):
     data = read_input(sys.stdin)
