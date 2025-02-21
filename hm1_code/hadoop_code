@@ -19,9 +19,9 @@ hadoop fs -rm -r final_output
 
 hadoop jar /usr/lib/hadoop/hadoop-streaming-3.3.6.jar \
     -D mapreduce.job.name="SecondJob_SortAssignID" \
-    -D mapreduce.job.reduces=2 \
-    -D stream.num.map.output.key.fields=1 \
-    -D mapreduce.partition.keycomparator.options="-k1,1n" \
+    -D mapreduce.job.reduces=1 \
+    -D stream.num.map.output.key.fields=2 \
+    -D mapreduce.partition.keycomparator.options="-k1n,-k2" \
     -input temp_output \
     -output final_output \
     -file mapper2.py \
