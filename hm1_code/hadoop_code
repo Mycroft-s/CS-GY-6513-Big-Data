@@ -1,6 +1,7 @@
 
 step1: Preprocessing and word frequency statistics
 
+hadoop fs -rm -r temp_output
 
 hadoop jar /usr/lib/hadoop/hadoop-streaming-3.3.6.jar \
     -D mapreduce.job.name="FirstJob_WordCount" \
