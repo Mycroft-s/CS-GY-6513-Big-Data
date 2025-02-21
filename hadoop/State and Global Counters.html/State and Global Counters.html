@@ -1,0 +1,9 @@
+﻿<!DOCTYPE html>
+<html><head></head><body style="color: rgb(32, 33, 34); font-family: verdana, sans-serif; font-size: 12px;"><p><span style="font-size: 17px;">I mentioned in class that the only way to keep a state in Hadoop is through&nbsp;<strong><em>global counters</em></strong>.&nbsp;</span></p>
+<p><span style="font-size: 17px;">For a general reference on Hadoop Streaming, see: <a href="https://hadoop.apache.org/docs/current/hadoop-streaming/HadoopStreaming.html">https://hadoop.apache.org/docs/current/hadoop-streaming/HadoopStreaming.html</a></span></p>
+<p><span style="font-size: 17px;"></span></p>
+<p><span style="font-size: 17px;">For user defined global counters in Java, see the documentation or come to office hours. In Python, a user defined global counter is create, and incremented, by writing a specific formatted string to the stderr output stream, as in:</span></p>
+<pre><span style="font-size: 17px;"><code data-highlighted="yes">sys.stderr.write("reporter:counter:<em><strong>groupname</strong></em>,<em><strong>counter_name</strong></em>,<em><strong>1</strong></em>\n")</code></span></pre>
+<p><span style="font-size: 17px;">In this example, a counter named <em><strong>counter_name</strong></em>, in the group&nbsp;<em><strong>groupname,&nbsp;</strong></em>will be incremented by the integer&nbsp;<em><strong>1</strong></em>.&nbsp;</span></p>
+<p><span style="font-size: 17px;">If the group does not exist, it will be created.&nbsp;<br>If the counter does not exist in the group, it will be created and the value assigned.</span></p>
+<p><span style="font-size: 17px;">Remember, the global counter value will only be valid once the job ends. In Hadoop streaming, it will be part of the job printout. In Java, the <code>job</code> variable is an object and it has methods to access state and counters.</span></p></body></html>
