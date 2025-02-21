@@ -1,0 +1,1 @@
+This zip file has three folders for three problems. You can find the code in py files and hadoop code for hadooop command line. The results are showed in the screenshot. For problem3, some of results in hadoop code file, which shows total words seen and frequencies of &nbsp;words with IDs = 10 and 15 .
