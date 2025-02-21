@@ -22,7 +22,7 @@ hadoop jar /usr/lib/hadoop/hadoop-streaming-3.3.6.jar \
     -D mapreduce.job.name="SecondJob_SortAssignID" \
     -D mapreduce.job.reduces=1 \
     -D stream.num.map.output.key.fields=2 \
-    -D mapreduce.partition.keycomparator.options="-k1n,-k2" \
+    -D mapreduce.partition.keycomparator.options="-k1,1n -k2,2" \
     -input temp_output \
     -output final_output \
     -file mapper2.py \
