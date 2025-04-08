@@ -1,0 +1,15 @@
+{"order_id":101,"customer_id":1,"order_date":"2023-09-01","status":"Completed","payment_method":"Credit Card","shipping_method":"Standard","categories":["electronics","home"]}
+{"order_id":102,"customer_id":2,"order_date":"2023-09-05","status":"Completed","payment_method":"PayPal","shipping_method":"Express","categories":["clothing","accessories"]}
+{"order_id":103,"customer_id":3,"order_date":"2023-09-10","status":"Processing","payment_method":"Credit Card","shipping_method":"Standard","categories":["books","stationery"]}
+{"order_id":104,"customer_id":1,"order_date":"2023-09-15","status":"Completed","payment_method":"Credit Card","shipping_method":"Express","categories":["electronics"]}
+{"order_id":105,"customer_id":5,"order_date":"2023-09-20","status":"Cancelled","payment_method":"PayPal","shipping_method":"Standard","categories":["home","garden"]}
+{"order_id":106,"customer_id":7,"order_date":"2023-09-25","status":"Completed","payment_method":"Credit Card","shipping_method":"Express","categories":["sports","outdoors"]}
+{"order_id":107,"customer_id":2,"order_date":"2023-10-01","status":"Processing","payment_method":"PayPal","shipping_method":"Standard","categories":["beauty","health"]}
+{"order_id":108,"customer_id":8,"order_date":"2023-10-05","status":"Completed","payment_method":"Credit Card","shipping_method":"Express","categories":["electronics","accessories"]}
+{"order_id":109,"customer_id":9,"order_date":"2023-10-10","status":"Cancelled","payment_method":"PayPal","shipping_method":"Standard","categories":["clothing"]}
+{"order_id":110,"customer_id":10,"order_date":"2023-10-15","status":"Completed","payment_method":"Credit Card","shipping_method":"Express","categories":["books","electronics"]}
+{"order_id":111,"customer_id":1,"order_date":"2023-10-20","status":"Processing","payment_method":"PayPal","shipping_method":"Standard","categories":["home","garden"]}
+{"order_id":112,"customer_id":4,"order_date":"2023-10-25","status":"Completed","payment_method":"Credit Card","shipping_method":"Express","categories":["sports","clothing"]}
+{"order_id":113,"customer_id":6,"order_date":"2023-11-01","status":"Cancelled","payment_method":"PayPal","shipping_method":"Standard","categories":["beauty","health"]}
+{"order_id":114,"customer_id":3,"order_date":"2023-11-05","status":"Completed","payment_method":"Credit Card","shipping_method":"Express","categories":["electronics","home"]}
+{"order_id":115,"customer_id":5,"order_date":"2023-11-10","status":"Processing","payment_method":"PayPal","shipping_method":"Standard","categories":["books","stationery"]}

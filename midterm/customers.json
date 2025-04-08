@@ -1,0 +1,10 @@
+{"customer_id":1,"name":"John Smith","email":"john@example.com","tier":"Gold","city":"New York","registration_date":"2022-01-15"}
+{"customer_id":2,"name":"Mary Johnson","email":"mary@example.com","tier":"Silver","city":"Los Angeles","registration_date":"2022-03-20"}
+{"customer_id":3,"name":"Robert Brown","email":"robert@example.com","tier":"Bronze","city":"Chicago","registration_date":"2023-02-10"}
+{"customer_id":4,"name":"Linda Davis","email":"linda@example.com","tier":"Gold","city":"Houston","registration_date":"2021-11-05"}
+{"customer_id":5,"name":"Michael Wilson","email":"michael@example.com","tier":"Silver","city":"Phoenix","registration_date":"2022-07-22"}
+{"customer_id":6,"name":"Elizabeth Taylor","email":"elizabeth@example.com","tier":"Bronze","city":"Philadelphia","registration_date":"2023-04-18"}
+{"customer_id":7,"name":"James Anderson","email":"james@example.com","tier":"Gold","city":"San Antonio","registration_date":"2021-09-30"}
+{"customer_id":8,"name":"Patricia Thomas","email":"patricia@example.com","tier":"Silver","city":"San Diego","registration_date":"2022-05-12"}
+{"customer_id":9,"name":"Richard Martin","email":"richard@example.com","tier":"Bronze","city":"Dallas","registration_date":"2023-01-25"}
+{"customer_id":10,"name":"Jennifer Clark","email":"jennifer@example.com","tier":"Gold","city":"San Jose","registration_date":"2021-12-03"}
